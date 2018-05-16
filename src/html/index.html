@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        
+        <title>Page links</title>
+        <meta name="description" content="Project Description"/>
+        <meta name="keywords" content="Project keywords"/>
+        
+        <!--icons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/touch/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
+        <link rel="manifest" href="images/touch/site.webmanifest">
+        <link rel="shortcut icon" href="images/touch/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="images/touch/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!--social icons-->
+        <meta property="og:image:height" content="412">
+        <meta property="og:image:width" content="787">
+        <meta property="og:title" content="An awesome page">
+        <meta property="og:description" content="Everything you need to know about the topic you are looking for">
+        <meta property="og:url" content="http://example.com">
+        <meta property="og:image" content="images/touch/og-image.jpg">
+        
+        <style>
+            .main {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        @@include('./components/header.html')
+        
+        <!--BEGIN MAIN-->
+        <main class="main">
+            <div class="main__inner">
+                
+                <ul class="site-links">
+                    <li class="site-links__item">
+                        <a href="product.html">Страница товара</a>
+                    </li>
+                </ul>
+            
+            </div>
+        </main>
+        <!--end of MAIN-->
+        
+        @@include('./components/footer.html')
+        
+        <div class="modal-holder" id="modal-holder"></div>
+        <div class="ui-icons" id="ui-icons"></div>
+
+        <!--STYLE-->
+        <link rel="stylesheet" href="css/style.css"/>
+        
+        <!--JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

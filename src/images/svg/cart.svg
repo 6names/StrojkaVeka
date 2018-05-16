@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>cart</title>
+    <g>
+        <g id="cart">
+            <path d="M1,1 L1,13 L12,13 L12,1 L1,1 Z M13,0 L13,14 L0,14 L0,0 L13,0 Z" id="Rectangle"></path>
+            <polygon id="&gt;" points="5.95383195 9.64942338 3 5 4.1634349 5 6.50323176 8.79828856 8.8365651 5 10 5 7.03970452 9.64942338"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        
+        <title>Main</title>
+        <meta name="description" content="Project Description"/>
+        <meta name="keywords" content="Project keywords"/>
+        
+        <!--icons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/touch/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
+        <link rel="manifest" href="images/touch/site.webmanifest">
+        <link rel="shortcut icon" href="images/touch/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="images/touch/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!--social icons-->
+        <meta property="og:image:height" content="412">
+        <meta property="og:image:width" content="787">
+        <meta property="og:title" content="An awesome page">
+        <meta property="og:description" content="Everything you need to know about the topic you are looking for">
+        <meta property="og:url" content="http://example.com">
+        <meta property="og:image" content="images/touch/og-image.jpg">
+        
+        <style>
+            .main {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <header class="header">
+    <div class="header__holder">
+        <div class="header__inner">
+            <div class="header__left">
+                <!--Logo-->
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <picture>
+                            <source media="(max-width:1024px)" srcset="images/ui/logo-mobile.svg"/>
+                            <img src="images/ui/logo-desktop.svg" alt=""/>
+                        </picture>
+                    </a>
+                    
+                    <div class="header__categories">
+                        <div class="header__categories-value">Кабельно-проводниковая продукция</div>
+                        <div class="header__categories-list">
+                            <div class="header__categories-title">Все направления</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Кабеля</a>
+                                </li>
+                                <li>
+                                    <a href="#">Стройматериалы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Столярные изделия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Напольные покрытия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Электротовары</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инструменты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Плитка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сантехника</a>
+                                </li>
+                                <li>
+                                    <a href="#">Водоснабжение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Краски и лаки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Обои</a>
+                                </li>
+                                <li>
+                                    <a href="#">Освещение</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Contacts-->
+                <div class="header__contacts">
+                    <div class="header__contacts-location">
+                        <div class="header__contacts-location-trigger">
+                            <svg class="icon-location"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-location"></use></svg>
+                            Москва
+                        </div>
+                        <div class="header__contacts-location-list">
+                            <div class="header__contacts-location-title">Города</div>
+                            <ul>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 2</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 3</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 4</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="tel:74956423853" class="header__contacts-phone call-to">+7 (495) 642-38-53</a>
+                </div>
+                
+                <!--Search-->
+                <form class="header__search search">
+                    <input class="search__input" type="search" title="Поиск" placeholder="Поиск"/>
+                    <button class="search__button" type="button">
+                        <svg class="icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="header__right">
+                <!--Nav trigger-->
+                <button class="header__nav-trigger">Меню</button>
+                
+                <!--Cart link-->
+                <a href="#" class="header__cart">
+                    <span class="header__cart-counter">4</span>
+                    <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                </a>
+                
+                <!--Mobile nav trigger-->
+                <button class="header__mobile-button" type="button">Menu</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Header nav-->
+    <div class="header__dropdown">
+    <div class="header__dropdown-title">
+        <div class="header__dropdown-inner">
+            Каталог продукции
+        </div>
+    </div>
+    
+    <div class="header__dropdown-inner">
+        <div class="header__dropdown-content">
+            <div class="header__dropdown-category">
+                <svg class="icon-wire"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-wire"></use></svg>
+                <span>Кабельно- проводниковая продукция</span>
+            </div>
+            
+            <nav class="header__dropdown-list">
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Тип кабеля</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-alphabet">
+                            <li class="current">
+                                <a href="#">Популярные</a>
+                            </li>
+                            <li>
+                                <a href="#">А</a>
+                            </li>
+                            <li>
+                                <a href="#">Б</a>
+                            </li>
+                            <li>
+                                <a href="#">В</a>
+                            </li>
+                            <li>
+                                <a href="#">Г</a>
+                            </li>
+                            <li>
+                                <a href="#">Д</a>
+                            </li>
+                            <li>
+                                <a href="#">З</a>
+                            </li>
+                            <li>
+                                <a href="#">И</a>
+                            </li>
+                            <li>
+                                <a href="#">К</a>
+                            </li>
+                            <li>
+                                <a href="#">Л</a>
+                            </li>
+                            <li>
+                                <a href="#">М</a>
+                            </li>
+                            <li>
+                                <a href="#">Н</a>
+                            </li>
+                            <li>
+                                <a href="#">О</a>
+                            </li>
+                            <li>
+                                <a href="#">П</a>
+                            </li>
+                            <li>
+                                <a href="#">Р</a>
+                            </li>
+                            <li>
+                                <a href="#">С</a>
+                            </li>
+                            <li>
+                                <a href="#">Т</a>
+                            </li>
+                            <li>
+                                <a href="#">У</a>
+                            </li>
+                            <li>
+                                <a href="#">Ф</a>
+                            </li>
+                            <li>
+                                <a href="#">Х</a>
+                            </li>
+                            <li>
+                                <a href="#">Ц</a>
+                            </li>
+                            <li>
+                                <a href="#">Ч</a>
+                            </li>
+                            <li>
+                                <a href="#">Ш</a>
+                            </li>
+                            <li>
+                                <a href="#">Э</a>
+                            </li>
+                            <li>
+                                <a href="#">Ю</a>
+                            </li>
+                            <li>
+                                <a href="#">Я</a>
+                            </li>
+                            <li>
+                                <a href="#">Все</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели самонесущие</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели сигнальные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели спитральные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели сигнальные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели сварочные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели силовые</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели стационарные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели силовые</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели связи</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели слаботочные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели судовые</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели слаботочные</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Напряжение</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели 1 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 10 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 30 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 220 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 6 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 20 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 110 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 500 кВ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Тип жилы</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели алюминиевые</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели медные</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Производитель</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Lapp Group</a>
+                            </li>
+                            <li>
+                                <a href="#">Helkama</a>
+                            </li>
+                            <li>
+                                <a href="#">Faber</a>
+                            </li>
+                            <li>
+                                <a href="#">Cables</a>
+                            </li>
+                            <li>
+                                <a href="#">Helukabel</a>
+                            </li>
+                            <li>
+                                <a href="#">Kabeltec</a>
+                            </li>
+                            <li>
+                                <a href="#">AG TKD Kabel</a>
+                            </li>
+                            <li>
+                                <a href="#">Unika</a>
+                            </li>
+                            <li>
+                                <a href="#">Top Cable</a>
+                            </li>
+                            <li>
+                                <a href="#">Klaus</a>
+                            </li>
+                            <li>
+                                <a href="#">Prakab</a>
+                            </li>
+                            <li>
+                                <a href="#">Draka</a>
+                            </li>
+                            <li>
+                                <a href="#">Draka</a>
+                            </li>
+                            <li>
+                                <a href="#">Tsubaki</a>
+                            </li>
+                            <li>
+                                <a href="#">Kabelschlepp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Кол-во жил</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели одножильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели трехжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели пятижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели семижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели двухжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели четырехжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели шестижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели восьмижильные</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Тип применения</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели для подвижного состава</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для воздушной прокладки</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для пожарной сигнализации</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для прокладки в земле</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для наружной прокладки</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для прогрева бетона</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для пожарной сигнализации</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для видеонаблюдения</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для сауны</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Материал изоляции</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели c бумажной изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с изоляцией из сшитого полиэтилена</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с пластмассовой изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с резиновой изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели силиконовые</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--Dropdown row-->
+                <div class="header__dropdown-row">
+                    <div class="header__dropdown-group">Материал оболочки</div>
+                    <div class="header__dropdown-nav">
+                        <ul class="header__dropdown-links">
+                            <li>
+                                <a href="#">Кабели в резиновой оболочке</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели свинцовые</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </nav>
+        </div>
+    </div>
+</div>
+    
+    <!--mobile nav-->
+    <div class="header__mobile active">
+    <div class="header__mobile-contacts">
+        <div class="header__mobile-location">
+            <div class="header__mobile-location-trigger">
+                <svg class="icon-location"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-location"></use></svg>
+                Москва
+            </div>
+            <ul class="header__mobile-location-list">
+                <li>Города</li>
+                <li>
+                    <a href="#">Город 2</a>
+                </li>
+                <li>
+                    <a href="#">Город 3</a>
+                </li>
+                <li>
+                    <a href="#">Город 4</a>
+                </li>
+                <li>
+                    <a href="#">Город 5</a>
+                </li>
+            </ul>
+        </div>
+        <a href="tel:74956423853" class="header__mobile-phone call-to">+7 (495) 642-38-53</a>
+    </div>
+    
+    <div class="header__mobile-categories">
+        <div class="header__mobile-categories-value">Кабельно-проводниковая продукция</div>
+        <ul class="header__mobile-categories-list">
+            <li>Все направления</li>
+            <li>
+                <a href="#">Кабеля</a>
+            </li>
+            <li>
+                <a href="#">Стройматериалы</a>
+            </li>
+            <li>
+                <a href="#">Столярные изделия</a>
+            </li>
+            <li>
+                <a href="#">Напольные покрытия</a>
+            </li>
+            <li>
+                <a href="#">Электротовары</a>
+            </li>
+            <li>
+                <a href="#">Инструменты</a>
+            </li>
+            <li>
+                <a href="#">Плитка</a>
+            </li>
+            <li>
+                <a href="#">Сантехника</a>
+            </li>
+            <li>
+                <a href="#">Водоснабжение</a>
+            </li>
+            <li>
+                <a href="#">Краски и лаки</a>
+            </li>
+            <li>
+                <a href="#">Обои</a>
+            </li>
+            <li>
+                <a href="#">Освещение</a>
+            </li>
+        </ul>
+    </div>
+    
+    <nav class="header__mobile-nav">
+        <div class="header__mobile-scroll">
+            <div class="header__mobile-content">
+                <div class="header__mobile-title">Каталог продукции</div>
+                
+                <!--Main nav-->
+                <ul class="header__mobile-nav-main">
+                    <li class="header__mobile-nav-item">Тип кабеля</li>
+                    <li class="header__mobile-nav-item">Напряжение</li>
+                    <li class="header__mobile-nav-item">Тип жилы</li>
+                    <li class="header__mobile-nav-item">Производитель</li>
+                    <li class="header__mobile-nav-item">Тип применения</li>
+                    <li class="header__mobile-nav-item">К-во жил</li>
+                    <li class="header__mobile-nav-item">Материал изоляции</li>
+                    <li class="header__mobile-nav-item">Материал оболочки</li>
+                </ul>
+                
+                <!--Subnav-->
+                <div class="header__mobile-subnav">
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Тип кабеля</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Популярные</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сигнальные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели спитральные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сигнальные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сварочные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели силовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели стационарные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели силовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели связи</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели судовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">А</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сигнальные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Б</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели силовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели стационарные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели силовые</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">В</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Г</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели сигнальные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сварочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Д</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">З</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели судовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">И</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели судовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">К</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Л</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели сигнальные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">М</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели судовые</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели слаботочные</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Н</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели стационарные</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кабели силовые</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">О</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">П</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Р</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">С</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Т</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">У</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Ф</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Х</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Ц</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Ч</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Ш</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Э</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Ю</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Я</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__mobile-subnav-trigger">Все</div>
+                                <ul class="header__mobile-subnav-content">
+                                    <li>
+                                        <a href="#">Кабели самонесущие</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Напряжение</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели 1 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 10 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 30 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 220 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 6 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 20 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 110 кВ</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели 500 кВ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Тип жилы</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели алюминиевые</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели медные</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Производитель</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Lapp Group</a>
+                            </li>
+                            <li>
+                                <a href="#">Helkama</a>
+                            </li>
+                            <li>
+                                <a href="#">Faber</a>
+                            </li>
+                            <li>
+                                <a href="#">Cables</a>
+                            </li>
+                            <li>
+                                <a href="#">Helukabel</a>
+                            </li>
+                            <li>
+                                <a href="#">Kabeltec</a>
+                            </li>
+                            <li>
+                                <a href="#">AG TKD Kabel</a>
+                            </li>
+                            <li>
+                                <a href="#">Unika</a>
+                            </li>
+                            <li>
+                                <a href="#">Top Cable</a>
+                            </li>
+                            <li>
+                                <a href="#">Klaus</a>
+                            </li>
+                            <li>
+                                <a href="#">Prakab</a>
+                            </li>
+                            <li>
+                                <a href="#">Draka</a>
+                            </li>
+                            <li>
+                                <a href="#">Draka</a>
+                            </li>
+                            <li>
+                                <a href="#">Tsubaki</a>
+                            </li>
+                            <li>
+                                <a href="#">Kabelschlepp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Кол-во жил</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели одножильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели трехжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели пятижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели семижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели двухжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели четырехжильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели шестижильные</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели восьмижильные</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Тип применения</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели для подвижного состава</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для воздушной прокладки</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для пожарной сигнализации</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для прокладки в земле</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для наружной прокладки</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для прогрева бетона</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для пожарной сигнализации</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для видеонаблюдения</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели для сауны</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Материал изоляции</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели c бумажной изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с изоляцией из сшитого полиэтилена</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с пластмассовой изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели с резиновой изоляцией</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели силиконовые</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="header__mobile-subnav-column">
+                        <div class="header__mobile-back">Материал оболочки</div>
+                        <ul class="header__mobile-subnav-list">
+                            <li>
+                                <a href="#">Кабели в резиновой оболочке</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабели свинцовые</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="header__mobile-close"></div>
+
+</header>
+        
+        <!--BEGIN MAIN-->
+        <main class="main">
+            <!--product-->
+            <article class="product">
+        
+                <!--title-->
+                <div class="page-title">
+                    <div class="page-title__inner">
+                        <!--breadcrumbs-->
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                                <a href="#">Каталог продукции</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Кабельно-проводниковая продукция</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">Кабели сварочные</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#">КГ</a>
+                            </li>
+                        </ul>
+                        <!-- end of breadcrumbs-->
+                
+                        <div class="page-title__name">
+                            <h1>КГOH-4</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of title-->
+                
+                <!--product header-->
+                <div class="product__header">
+                    <div class="product__header-data">
+                        <div class="product__header-frame">
+                            <div class="product__header-column">
+                                <div class="product__header-art">Код товара: <span class="product__header-art-number">135250-60053</span></div>
+                                <div class="product__header-price">
+                                    <div class="product__header-price-label">Цена:</div>
+                                    <div class="product__header-price-value">
+                                        <div class="product__header-price-item">от 15.31 р./м</div>
+                                        <div class="product__header-price-item product__header-price-item_old">от 19.31 р./м</div>
+                                    </div>
+                                </div>
+                                <div class="product__header-info">
+                                    <a href="#" class="product__header-info-item modal-trigger" data-target="payment-modal">
+                                        <svg class="icon-card"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-card"></use></svg>
+                                        Способ оплаты
+                                    </a>
+                                    <a href="#" class="product__header-info-item modal-trigger" data-target="delivery-modal">
+                                        <svg class="icon-bus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bus"></use></svg>
+                                        Доставка
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product__header-column">
+                                <div class="product__header-availability">
+                                    <svg class="icon-check"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-check"></use></svg>
+                                    В наличии
+                                </div>
+    
+                                <button class="main-butn product__header-buy" type="button">
+                                    Купить
+                                    <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                                </button>
+                                <button class="main-butn modal-trigger" type="button" data-target="order-modal">Заказать в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__header-slider">
+                        <div class="product__header-gallery">
+                            <div class="product__header-slide">
+                                <div class="product__header-slide-image">
+                                    <img src="images/slide.jpg" srcset="images/slide@2x.jpg 2x" alt=""/>
+                                </div>
+                            </div>
+                            <div class="product__header-slide">
+                                <div class="product__header-slide-image">
+                                    <img src="images/slide.jpg" srcset="images/slide@2x.jpg 2x" alt=""/>
+                                </div>
+                            </div>
+                            <div class="product__header-slide">
+                                <div class="product__header-slide-image">
+                                    <img src="images/slide.jpg" srcset="images/slide@2x.jpg 2x" alt=""/>
+                                </div>
+                            </div>
+                            <div class="product__header-slide">
+                                <div class="product__header-slide-image">
+                                    <img src="images/slide.jpg" srcset="images/slide@2x.jpg 2x" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__header-slider-controls">
+                            <button class="product__header-slider-prev" type="button"><svg class="icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg></button>
+                            <button class="product__header-slider-next" type="button"><svg class="icon-arrow"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use></svg></button>
+                            <div class="product__header-slider-counter"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of product header-->
+    
+                <!--page nav-->
+                <div class="page-nav">
+                    <div class="page-nav__holder">
+                        <div class="page-nav__inner">
+                            <ul class="page-nav__list">
+                                <li class="page-nav__list-item">
+                                    <a class="anchor current" href="#sizes">Сечения кабеля</a>
+                                </li>
+                                <li class="page-nav__list-item">
+                                    <a class="anchor" href="#description">Описание</a>
+                                </li>
+                                <li class="page-nav__list-item">
+                                    <a class="anchor" href="#analog">Аналоги</a>
+                                </li>
+                            </ul>
+    
+                            <button class="main-butn modal-trigger" type="button" data-target="order-modal">Заказать в 1 клик</button>
+                        </div>
+                    </div>
+                </div>
+                <!--end of page nav-->
+                
+                
+                <!--product section-->
+                <section class="product__section scroll-block" id="sizes">
+                    <div class="product__inner">
+                        <div class="product__section-title"><h2>Сечения кабеля</h2></div>
+                        
+                        <!--table-->
+                        <div class="content-table" id="table-a">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Наименование</th>
+                                        <th colspan="2">Цена за метр</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">КГБ 1Х0,5</a></td>
+                                        <td>от 51.95 р.</td>
+                                        <td class="content-table__buy">
+                                            <a href="#" class="content-table__buy-link">
+                                                В корзину
+                                                <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КГБ 1Х0,7</a></td>
+                                        <td>от 1103.68 р.</td>
+                                        <td class="content-table__buy">
+                                            <a href="#" class="content-table__buy-link">
+                                                В корзину
+                                                <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КГБ 1Х1</a></td>
+                                        <td>от 123.59 р.</td>
+                                        <td class="content-table__buy">
+                                            <a href="#" class="content-table__buy-link">
+                                                В корзину
+                                                <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КГБ 1Х2</a></td>
+                                        <td>от 51.95 р.</td>
+                                        <td class="content-table__buy">
+                                            <a href="#" class="content-table__buy-link">
+                                                В корзину
+                                                <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end of table-->
+                    </div>
+                </section>
+                <!-- end of product section-->
+                
+                <!--product section-->
+                <section class="product__section scroll-block" id="description">
+                    <div class="product__inner">
+                        <div class="product__section-title"><h2>Описание</h2></div>
+    
+                        <!--text-block-->
+                        <div class="text-block">
+                            <h3>Расшифровка кабеля КГ:</h3>
+                            <p>К - Кабель <br/>Г - Гибкий</p>
+    
+                            <h3>Элементы конструкции кабеля КГ:</h3>
+    
+                            <ol>
+                                <li>Токопроводящая жила скрученная из медных проволок (класс 5);</li>
+                                <li>Слой из полиэтилентерефталатной пленки марки ПЭТ-Э;</li>
+                                <li>Изоляция из резины типа РТИ-1 или РТИ-1-ХЛ на основе натурального и бутадиенового каучуков. Маркировка изолированных жил: цифровая: 1, 2, 3, 4, 5, жила заземления - 0; цветовая: голубой, черный, коричневый, жила заземления - зелёно-жёлтая.</li>
+                                <li>Слой из полиэтилентерефталатной пленки марки ПЭТ-Э (скрученных изолированных жил);</li>
+                                <li>Оболочка из резины типа РШТ-2 на основе изопренового и бутадиенового каучуков; изоляционно-защитная оболочка одножильных кабелей из резины типа РТИШМ на основе изопренового и бутадиенового каучуков.</li>
+                            </ol>
+    
+                            <h3>Область применения кабеля КГ</h3>
+    
+                            <p>Кабели предназначены для присоединения передвижных механизмов к электрическим сетям на номинальное переменное напряжение 380 В частоты до 400 Гц или постоянное номинальное напряжение 660 В.</p>
+                            <p>Кабели на 660 В предназначены для присоединения передвижных механизмов к электрическим сетям при переменном напряжении 660 В частотой до 400 Гц или постоянном напряжении 1000 В, при изгибах с радиусом не менее 8 диаметров кабеля при допустимой температуре нагрева токопроводящих жил до 75°С. Кабели КГ могут использоваться в сварочных аппаратах, а также для осуществления различных видов сварочных работ.</p>
+                        </div>
+                        <!-- end of text-block-->
+                    </div>
+                </section>
+                <!-- end of product section-->
+                
+                <!--product section-->
+                <section class="product__section scroll-block" id="analog">
+                    <div class="product__inner">
+                        <div class="product__section-title"><h2>Аналоги</h2></div>
+    
+                        <!--table-->
+                        <div class="content-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Марки</th>
+                                        <th>Отличия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">КГ</a></td>
+                                        <td>с жилами из луженых медных проволок, с использованием резин</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КГ -ХЛ</a></td>
+                                        <td>использование резин для холодного климата до -60 %</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КГР</a></td>
+                                        <td>в маслостойкой оболочке, не распространяющей горение</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">КПЭСГ</a></td>
+                                        <td>с жилами повышенной гибкости и с профилированным сердечником</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end of table-->
+                    </div>
+                </section>
+                <!-- end of product section-->
+
+            </article>
+            <!-- end of product-->
+            
+            <!--seo-->
+            <section class="seo-text">
+                <div class="seo-text__inner">
+                    <div class="seo-text__title">
+                        <h1>Купить сварочные кабели</h1>
+                    </div>
+                    
+                    <div class="seo-text__content">
+                        <p>Наша компания занимается продажей различных марок сварочного кабеля из наличия со складов, расположенных по всей России, или под заказ на производство. Специалисты «Кабель.РФ» знают все о данной продукции, поэтому грамотно проконсультируют вас </p>
+                        <p>Сварочный кабель для выполнения определяющего назначения должен выдерживать высокий уровень длительно допустимой токовой нагрузки при напряжении 380-660В переменного тока частоты 400Гц, должен быть гибким и устойчивым к растягивающей и раздавливающей нагрузкам. </p>
+                        <p>Решение таких требований обеспечивает соответствующая конструкция. Кабель электросварочный имеет медные многопроволочные жилы 5 класса гибкости, изоляцию из резины типа РТИ-1, слой из полиэтилентерефталатной пленки и оболочку из резины типа РШТ-2, РТИШМ или РШН-1, РШН-2. Виды сварочных кабелей можно условно разделить по функциональному назначению: силовой - для подключения аппарата к электросети; соединительные - для передачи сварочного напряжения; кабель держака - подающий ток на рабочую контактную часть; заземление. </p>
+                    </div>
+                </div>
+            </section>
+            <!-- end of seo-->
+        </main>
+        <!--end of MAIN-->
+        
+        <footer class="footer">
+    <div class="footer__top">
+        <div class="footer__inner">
+            <ul class="footer__nav">
+                <li>
+                    <a href="#">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">Оплата и доставка</a>
+                </li>
+                <li>
+                    <a href="#">Статьи</a>
+                </li>
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            
+            <ul class="footer__socials">
+                <li>
+                    Присоеденяйтесь:
+                </li>
+                <li>
+                    <a href="#">Youtube</a>
+                </li>
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">ВКонтакте</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__inner">
+            <small class="footer__copyright">
+                &copy; 1998-2018 Стройка века
+                <br/>Информация на сайте о технических характеристиках, наличии на складе, стоимости и изображениях товаров не является публичной офертой.
+            </small>
+        </div>
+    </div>
+</footer>
+
+        
+        <div class="modal-holder" id="modal-holder"></div>
+        <div class="ui-icons" id="ui-icons"></div>
+
+        <!--STYLE-->
+        <link rel="stylesheet" href="css/style.css"/>
+        
+        <!--JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>

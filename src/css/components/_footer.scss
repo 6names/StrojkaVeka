@@ -1,0 +1,115 @@
+.footer {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    min-height: 182px;
+    overflow: hidden;
+    background: $white;
+    border-top: 1px solid $border;
+    
+    &__inner {
+        @include inner();
+    }
+    
+    &__top {
+        border-bottom: 1px solid $border;
+        
+        .footer__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 94px;
+        }
+    }
+    
+    &__nav {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        
+        li {
+            &:not(:first-child) {
+                margin-left: 28px;
+            }
+        }
+    }
+    
+    &__socials {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: $lighterColor;
+        
+        li {
+            &:not(:last-child) {
+                margin-right: 18px;
+            }
+        }
+        
+        a {
+            color: $lighterColor;
+            
+            &:hover {
+                color: $theme;
+            }
+        }
+    }
+    
+    &__copyright {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $lighterColor;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        border: none;
+        
+        &__top {
+            border: none;
+        
+            .footer__inner {
+                display: block;
+                height: auto;
+            }
+        }
+    
+        &__nav {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            border-top: 1px solid $border;
+        
+            li {
+                &:not(:first-child) {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    
+        &__socials {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            border-top: 1px solid $border;
+        
+            li {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    
+        &__copyright {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            border-top: 1px solid $border;
+        }
+    }
+}

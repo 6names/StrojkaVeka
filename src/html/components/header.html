@@ -1,0 +1,119 @@
+<header class="header">
+    <div class="header__holder">
+        <div class="header__inner">
+            <div class="header__left">
+                <!--Logo-->
+                <div class="header__logo">
+                    <a href="#" class="header__logo-link">
+                        <picture>
+                            <source media="(max-width:1024px)" srcset="images/ui/logo-mobile.svg"/>
+                            <img src="images/ui/logo-desktop.svg" alt=""/>
+                        </picture>
+                    </a>
+                    
+                    <div class="header__categories">
+                        <div class="header__categories-value">Кабельно-проводниковая продукция</div>
+                        <div class="header__categories-list">
+                            <div class="header__categories-title">Все направления</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Кабеля</a>
+                                </li>
+                                <li>
+                                    <a href="#">Стройматериалы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Столярные изделия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Напольные покрытия</a>
+                                </li>
+                                <li>
+                                    <a href="#">Электротовары</a>
+                                </li>
+                                <li>
+                                    <a href="#">Инструменты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Плитка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сантехника</a>
+                                </li>
+                                <li>
+                                    <a href="#">Водоснабжение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Краски и лаки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Обои</a>
+                                </li>
+                                <li>
+                                    <a href="#">Освещение</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Contacts-->
+                <div class="header__contacts">
+                    <div class="header__contacts-location">
+                        <div class="header__contacts-location-trigger">
+                            <svg class="icon-location"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-location"></use></svg>
+                            Москва
+                        </div>
+                        <div class="header__contacts-location-list">
+                            <div class="header__contacts-location-title">Города</div>
+                            <ul>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 2</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 3</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 4</a>
+                                </li>
+                                <li class="header__contacts-location-value">
+                                    <a href="#">Город 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="tel:74956423853" class="header__contacts-phone call-to">+7 (495) 642-38-53</a>
+                </div>
+                
+                <!--Search-->
+                <form class="header__search search">
+                    <input class="search__input" type="search" title="Поиск" placeholder="Поиск"/>
+                    <button class="search__button" type="button">
+                        <svg class="icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="header__right">
+                <!--Nav trigger-->
+                <button class="header__nav-trigger">Меню</button>
+                
+                <!--Cart link-->
+                <a href="#" class="header__cart">
+                    <span class="header__cart-counter">4</span>
+                    <svg class="icon-cart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use></svg>
+                </a>
+                
+                <!--Mobile nav trigger-->
+                <button class="header__mobile-button" type="button">Menu</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Header nav-->
+    @@include('header-dropdown.html')
+    
+    <!--mobile nav-->
+    @@include('mobile-nav.html')
+
+</header>

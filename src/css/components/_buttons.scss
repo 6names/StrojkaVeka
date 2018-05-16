@@ -1,0 +1,84 @@
+[class*="-butn"] {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a[class*="-butn"]:hover {
+    text-decoration: none;
+}
+
+.main-butn {
+    height: 36px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $theme;
+    border: 1px solid $theme;
+    background: transparent;
+    
+    .win & {
+        padding-top: 0.2%;
+    }
+    
+    svg {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        fill: $theme;
+    }
+    
+    &:hover {
+        background: $theme;
+        color: $themeYellow;
+        
+        svg {
+            fill: $themeYellow;
+        }
+    }
+}
+
+.yellow-butn {
+    height: 36px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $theme;
+    border: 1px solid $themeYellow;
+    background: $themeYellow;
+    
+    .win & {
+        padding-top: 0.2%;
+    }
+    
+    svg {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        fill: $theme;
+    }
+    
+    &:hover {
+        background: $theme;
+        color: $themeYellow;
+        
+        svg {
+            fill: $themeYellow;
+        }
+    }
+}

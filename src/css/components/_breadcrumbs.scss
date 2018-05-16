@@ -1,0 +1,21 @@
+.breadcrumbs {
+    margin-bottom: 16px;
+    
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        font-weight: 500;
+        
+        &:not(:first-child):before {
+            content: '/';
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+        
+        &:last-child a {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+}

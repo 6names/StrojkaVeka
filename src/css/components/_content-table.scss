@@ -1,0 +1,78 @@
+.content-table {
+    padding-bottom: 15px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: $tableBg;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $themeYellow;
+    }
+    
+    table {
+        max-width: 798px;
+        min-width: 640px;
+    }
+    
+    th {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 17px;
+        padding-left: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        color: $lighterColor;
+        border-bottom: 1px solid $border;
+    }
+    
+    td {
+        vertical-align: middle;
+        padding-top: 11px;
+        padding-right: 20px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    
+    tbody tr:nth-child(even) {
+        background: $tableBg;
+    }
+    
+    &__buy {
+        text-align: right;
+        
+        &-link {
+            position: relative;
+            display: inline-block;
+            width: 85px;
+            padding-right: 15px;
+    
+            &:before,
+            svg {
+                position: absolute;
+                content: '';
+                top: 57%;
+                right: 0;
+                z-index: 2;
+                display: block;
+                width: 10px;
+                height: 10px;
+                transform: translate3d(0, -50%, 0);
+            }
+    
+            &:before {
+                z-index: 1;
+                background: $themeYellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.order-form {
+
+    &__description {
+        margin-bottom: 21px;
+        font-size: 14px;
+        line-height: 24px;
+        
+        &-price {
+            display: block;
+        }
+    }
+    
+    &__butn {
+        width: 100%;
+        height: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,85 @@
+input::-ms-clear {
+    display: none;
+}
+
+::-moz-placeholder {
+    color: $placeHolder;
+}
+
+:-ms-input-placeholder {
+    color: $placeHolder;
+}
+
+::-webkit-input-placeholder {
+    color: $placeHolder;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input.text-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    font-family: $mainFont;
+    font-size: 16px;
+    font-weight: 400;
+    color: $themeYellow;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $white;
+    background: none;
+    outline: none;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    &:focus {
+        border-bottom-color: $themeYellow;
+    }
+    
+    &.error {
+        color: $red;
+        border-bottom-color: $red;
+    }
+    
+    //noinspection ALL
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: $mainColor !important;
+    }
+}
+
+textarea.textarea-field {
+    @extend input.text-input;
+    height: 100px;
+    padding: 5px 0;
+    overflow: hidden;
+    resize: none;
+}
+
+.input-label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.input-line {
+    position: relative;
+    margin-bottom: 25px;
+}

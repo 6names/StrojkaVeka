@@ -1,0 +1,202 @@
+.product {
+    &__inner {
+        @include inner();
+    }
+}
+
+.product__header {
+    display: flex;
+    margin-bottom: 40px;
+    
+    &-data {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        background: $themeYellow;
+        color: $theme;
+    }
+    
+    &-frame {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: calc(1280px / 2);
+        padding-top: 38px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    
+    &-column {
+        width: calc(50% - 10px);
+        max-width: 274px;
+    }
+    
+    &-art {
+        margin-bottom: 19px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    &-price {
+        display: flex;
+        margin-bottom: 35px;
+        font-size: 24px;
+        font-weight: 900;
+        
+        &-label {
+            margin-right: 8px;
+        }
+        
+        &-item {
+            position: relative;
+            
+            &_old {
+                font-weight: 300;
+                margin-top: 8px;
+                text-decoration: line-through;
+            }
+        }
+    }
+    
+    &-info {
+        display: flex;
+        
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
+            
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+            
+            svg {
+                width: 12px;
+                height: 12px;
+                margin-right: 5px;
+                fill: $theme;
+            }
+            
+            &:before {
+                position: absolute;
+                content: '';
+                bottom: -2px;
+                right: 0;
+                display: block;
+                width: calc(100% - 17px);
+                height: 0;
+                border-bottom: 1px dashed $theme;
+                transition: all 0.2s;
+            }
+            
+            &:hover {
+                text-decoration: none;
+                
+                &:before {
+                    border-color: transparent;
+                }
+            }
+        }
+        
+    }
+    
+    &-availability {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-weight: 500;
+    
+        svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            fill: $theme;
+        }
+    }
+    
+    .main-butn {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    &-buy {
+        height: 60px;
+        font-size: 18px;
+    }
+    
+    &-slider {
+        position: relative;
+        width: 50%;
+        
+        &-controls {
+            outline: none;
+            
+            [class*="-next"] {
+                order: 3;
+            }
+        }
+    }
+    
+    &-slide {
+        position: relative;
+        height: 225px;
+        
+        &-image {
+            @include fullImage;
+        }
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        &-data {
+            width: 100%;
+        }
+        
+        &-frame {
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        &-slider {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 640px) {
+        &-frame {
+            display: block;
+        }
+        
+        &-column {
+            width: 100%;
+            max-width: 100%;
+            
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.product__section {
+    padding-top: 21px;
+    padding-bottom: 30px;
+    
+    &-title {
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        font-size: 36px;
+        font-weight: 300;
+        border-bottom: 1px solid $border;
+        
+        @media only screen and (min-width: 1025px) {
+            @include visuallyHidden;
+        }
+    }
+}
